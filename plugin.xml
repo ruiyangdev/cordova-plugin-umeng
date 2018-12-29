@@ -21,7 +21,7 @@
                 <param name="ios-package" value="UMPlugin"/>
             </feature>
         </config-file>
-        <source-file src="src/ios/UMMobClick.framework" framework="true" />
+        <framework src="src/ios/UMMobClick.framework" custom="true" />
         <framework src="CoreTelephony.framework" />
         <framework src="libsqlite3.tbd"/>
         <framework src="libz.tbd"/>
@@ -30,7 +30,7 @@
     <!-- android -->
     <platform name="android">
         
-        <source-file src="src/android/umeng-analytics-v6.0.4.jar" target-dir="libs" />
+        <source-file src="src/android/umeng-analytics-v6.1.2.jar" target-dir="libs" />
         <source-file src="src/android/UMPlugin.java" target-dir="src/com/umeng/plugin" />
         
         <config-file target="res/xml/config.xml" parent="/widget/plugins">
@@ -40,7 +40,7 @@
         </config-file>
         <config-file target="AndroidManifest.xml"  parent="application">
             <!-- appkey -->
-            <meta-data android:name="UMENG_APPKEY" android:value="4f83c5d852701564c0000011" />
+            <meta-data android:name="UMENG_APPKEY" android:value="59433db2f43e485a010002fe" />
             <meta-data android:name="UMENG_CHANNEL" android:value="Umeng-Channel"/>
         </config-file>        
         <config-file target="AndroidManifest.xml"  parent="/manifest">
